@@ -1,0 +1,356 @@
+@charset "UTF-8";
+p, h1, h2, h3 {
+  color: #515059;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+}
+
+h2 {
+  font-size: 4em;
+  font-family: 'Damion', serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+  margin-top: 2%;
+}
+
+h4 {
+  font-size: 0.1em;
+  margin: 0;
+  padding: 0;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+p {
+  margin: 0;
+  column-gap: 0.5;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.mock {
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+.square_btn {
+  margin-top: 0;
+  margin-bottom: 2%;
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #FAC46F;
+  border: solid 2px #FAC46F;
+  border-radius: 3px;
+  transition: .2s;
+}
+
+.square_btn:hover {
+  background: #FAC46F;
+  color: white;
+}
+
+.square_btn:active {
+  /*押したとき*/
+  background-color: #E27868;
+  border-color: #E27868;
+}
+
+.flex_ctn {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content_text {
+  margin: 0;
+  padding: 0;
+  padding-top: 2%;
+  text-align: left;
+  line-height: 2em;
+  font-size: 0.8em;
+}
+
+.left_content {
+  margin-right: 5%;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+body header {
+  width: auto;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #3E4852;
+}
+body header .g-nav {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: disc;
+}
+body header li {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 30px;
+}
+body header li a {
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 17px;
+}
+body header li a:hover {
+  color: #FAC46F;
+}
+body main {
+  margin-left: 0;
+  margin-right: 0;
+}
+body main img {
+  margin: 0;
+  width: 100%;
+}
+body main .contents {
+  margin-left: 16%;
+  margin-right: 16%;
+}
+body main .contents .my_name_is {
+  margin: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-weight: bold;
+}
+body main .contents .my_name_is .top_name {
+  display: block;
+  text-align: center;
+  font-size: 3.5em;
+}
+body main .contents .my_name_is .sub_name {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+}
+body main .contents .important .center_block_ctn {
+  display: block;
+  text-align: center;
+  width: 30%;
+}
+body main .contents .important .center_block_ctn .impotant_img {
+  width: 100%;
+}
+body main .contents .works .work_1 {
+  margin-bottom: 1%;
+}
+body main .contents .works .work_left {
+  margin-right: 2%;
+}
+body main .contents .works img {
+  width: 100%;
+}
+body main .contents .works .work_img :hover {
+  background-color: red;
+}
+body main .contents .aboutMe .aboutMe_img {
+  width: 45%;
+}
+body main .contents .aboutMe .aboutMe_img img {
+  width: 100%;
+}
+body main .contents .aboutMe .aboutMe_content {
+  width: 45%;
+  margin-left: 10%;
+  display: block;
+  word-wrap: break-word;
+}
+body main .contents .aboutMe .aboutMe_content p {
+  display: block;
+  width: 100%;
+}
+
+.work_container {
+  margin-left: 16%;
+  margin-right: 16%;
+}
+.work_container h1 {
+  font-family: 'Damion',sans-serif;
+  text-align: center;
+  font-size: 5em;
+  margin: 0;
+}
+.work_container h2 {
+  font-family: 'Noto Sans',sans-serif;
+  font-size: 2em;
+  margin: 2%;
+}
+.work_container h3 {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.work_container h4 {
+  font-size: 1em;
+  color: #515059;
+}
+.work_container .margin_bottom {
+  margin-bottom: 10%;
+}
+.work_container .bold {
+  font-weight: bold;
+  color: #515059;
+}
+.work_container p {
+  margin-bottom: 20px;
+  color: #515059;
+}
+.work_container img {
+  width: 100%;
+}
+.work_container .flex_ctn {
+  -webkit-justify-content: space-between;
+  /* Safari */
+  justify-content: space-between;
+}
+.work_container .left_contents {
+  width: 30%;
+}
+.work_container .right_contents {
+  width: 65%;
+}
+
+.process {
+  width: 100%;
+}
+.process img {
+  width: 100%;
+  margin-top: 5%;
+}
+.process .cover {
+  display: inline-block;
+  background-color: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  width: 250px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-size: cover;
+}
+.process .flex_ctn {
+  width: 100%;
+}
+.process .process_contents {
+  width: 100%;
+}
+
+figure.snip1212 {
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 275px;
+  max-width: 275px;
+  max-height: 190px;
+  min-height: 190px;
+  width: 100%;
+  color: #000000;
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #000000 70%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #000000 70%);
+}
+figure.snip1212 h4 {
+  text-shadow: 1px 1px 3px #9E9E9F;
+  font-size: 1em;
+}
+
+figure.snip1212 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+figure.snip1212 img {
+  max-width: 100%;
+}
+
+figure.snip1212 figcaption {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+figure.snip1212 h4,
+figure.snip1212 p {
+  margin: 0;
+  width: 100%;
+  padding: 10px 20px;
+  font-family: 'Noto Sans', 'helvetica', sans-serif;
+}
+
+figure.snip1212 h4 {
+  color: #ffffff;
+  position: absolute;
+  bottom: 100%;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+figure.snip1212 p {
+  background: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  bottom: 0;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+figure.snip1212 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.snip1212:hover img,
+figure.snip1212.hover img {
+  opacity: 0.4;
+}
+
+figure.snip1212:hover figcaption,
+figure.snip1212.hover figcaption {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}

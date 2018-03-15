@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="西谷">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <link rel="apple-touch-icon" sizes="76x76" href="src/img/AyumiNishiya.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="96x96" href="src/img/AyumiNishiya.png"> -->
+    <link href="src/css/style.css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>portfolio</title>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <script src="src/lib/jquery-3.2.1.min.js"></script>
+    <script>
+    $(function(){
+   // #で始まるアンカーをクリックした場合に処理
+     $(".sm_move").click(function() {
+//         console.log("hu");
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+//      // アンカーの値取得
+      var href= $(this).attr("href");
+//      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+//      // 移動先を数値で取得
+      var position = target.offset().top-100;
+//      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+     });
+    });
+    </script>
+  </head>
+
+
+
+  <body>
+    <header>
+      <ul class="g-nav">
+          <li class="g-nav-item"><a href="#targetTop" class="sm_move nav-link">Top</a></li>
+          <li class="g-nav-item"><a href="#targetWorks" class="sm_move nav-link">Works</a></li>
+          <li class="g-nav-item"><a href="#targetAbout" class="sm_move nav-link">About me</a></li>
+          <li class="g-nav-item"><a href="#targetContact" class="sm_move nav-link">Contact</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <img src="src/img/portfolio_mainvis.svg" alt="">
+
+      <div class="contents">
+        <div class="important">
+          <h2>about me</h2>
+          <div class="flex_ctn">
+
+            <div class="center_block_ctn left_content">
+              <img class="impotant_img" src="src/img/school.svg" alt="">
+              <h3 class="bold_title">School</h3>
+              <p class="content_text">大学では授業や課外活動を通してUI/UXを軸として、ユーザヒアリングから企画提案、コーディングや制作を行っています。</p>
+            </div>
+
+            <div class="center_block_ctn left_content">
+              <img class="impotant_img" src="src/img/brain.svg" alt="">
+              <h3>Think</h3>
+              <p class="content_text">相手(ユーザー)にとって本当に使いやすい・楽しい・嬉しい体験を提供したい。そのためにはユーザーの観察・分析や、ものづくりのプロセス、チームがユーザーの体験について同じ方向を向くが重要である考えている。</p>
+            </div>
+
+            <div class="center_block_ctn left_content">
+              <img class="impotant_img" src="src/img/dream.svg" alt="">
+              <h3>Dream</h3>
+              <p class="content_text">相手にとって本当に価値のある体験を届けられるデザイナーになりたい。</p>
+            </div>
+
+            <div class="center_block_ctn">
+              <img class="impotant_img" src="src/img/like.svg" alt="">
+              <h3>Like</h3>
+              <p class="content_text">料理/音楽鑑賞/新発売や期間限定のもの/朝のウォーキング</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="works">
+          <h2>Works</h2>
+          <div class="work_1">
+            <div class="flex_ctn">
+              <figure class="snip1212">
+                <img src="src/img/wow_work.jpg" alt="sample74" />
+                <figcaption>
+                  <h4>WOWベンチ</h4>
+                  <p>2年次授業「情報表現基礎2」で製作した"座ると音楽を再生する木製ベンチ"</p>
+                </figcaption>
+                <a href="work_wowbench.html"></a>
+              </figure>
+
+              <figure class="snip1212">
+                <img src="src/img/phoston_work.jpg" alt="sample74" />
+                <figcaption>
+                  <h4>石別観光アプリ</h4>
+                  <p>3年次授業「プロジェクト学習」で製作したアプリケーション</p>
+                </figcaption>
+                <a href="phoston.html"></a>
+              </figure>
+
+              <figure class="snip1212">
+                <img src="src/img/wedding_work.jpg" alt="sample74" />
+                <figcaption>
+                  <h4>みんなのウェディング</h4>
+                  <p>みんなのウェディング1dayインターンで製作したアプリケーション</p>
+                </figcaption>
+                <a href="work_wedding.html"></a>
+              </figure>
+            </div>
+          </div>
+
+          <div class="work_2">
+            <div class="flex_ctn">
+              <figure class="snip1212">
+                <img src="src/img/spot_work.jpg" alt="sample74" />
+                <figcaption>
+                  <h4>SPOT</h4>
+                  <p>函館教育大学の生徒と共同製作をしたフリーペーパー</p>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+
+
+
+              <figure class="snip1212">
+                <img src="src/img/portfolio_work.jpg" alt="sample74" />
+                <figcaption>
+                  <h4>ポートフォリオサイト</h4>
+                  <p>自分の就活に活用するため製作したwebページ</p>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+
+              <figure class="snip1212">
+                <img src="src/img/shiden_work.jpg" alt="sample74" />
+                <figcaption>
+                  <h4>函館市電サイトのリデザイン</h4>
+                  <p>3年次の授業「ヒューマンインタフェース」で製作したwebページ</p>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+          <!-- <div class="work_3">
+            <div class="flex_ctn">
+              <div class="work_img work_left">
+                <img src="src/img/blank2.jpg" alt="">
+              </div>
+              <div class="work_img work_left">
+                <img src="src/img/blank2.jpg" alt="">
+              </div>
+              <div class="work_img">
+                <img src="src/img/blank2.jpg" alt="">
+              </div>
+            </div>
+          </div> -->
+
+
+
+        <div class="contact">
+          <h2>Contact</h2>
+          <div class="flex_ctn">
+            <p>もし私に興味を持ちましたら、お気軽にメッセージをお送りください。</p>
+            <div class="contact_btn">
+              <a class="square_btn" href="#">Facebook</a>
+              <a class="square_btn" href="#">e-Mail</a>
+              <a class="square_btn" href="#">wantedly</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <text>Copyright © 2017 AyumiNishiya</text>
+    </footer>
+
+  </body>
+</html>
