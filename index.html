@@ -15,36 +15,36 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
     <script src="src/lib/jquery-3.2.1.min.js"></script>
     <script>
-    $(function(){
-   // #で始まるアンカーをクリックした場合に処理
-     $(".sm_move").click(function() {
-//         console.log("hu");
-      // スクロールの速度
-      var speed = 400; // ミリ秒
-//      // アンカーの値取得
-      var href= $(this).attr("href");
-//      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-//      // 移動先を数値で取得
-      var position = target.offset().top-100;
-//      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-     });
-    });
-    </script>
+//     $(function(){
+//    // #で始まるアンカーをクリックした場合に処理
+//      $(".sm_move").click(function() {
+// //         console.log("hu");
+//       // スクロールの速度
+//       var speed = 400; // ミリ秒
+// //      // アンカーの値取得
+//       var href= $(this).attr("href");
+// //      // 移動先を取得
+//       var target = $(href == "#" || href == "" ? 'html' : href);
+// //      // 移動先を数値で取得
+//       var position = target.offset().top-100;
+// //      // スムーススクロール
+//       $('body,html').animate({scrollTop:position}, speed, 'swing');
+//       return false;
+//      });
+//     });
+//     </script>
   </head>
 
 
 
   <body>
     <header>
-      <ul class="g-nav">
+      <!-- <ul class="g-nav">
           <li class="g-nav-item"><a href="#targetTop" class="sm_move nav-link">Top</a></li>
           <li class="g-nav-item"><a href="#targetWorks" class="sm_move nav-link">Works</a></li>
           <li class="g-nav-item"><a href="#targetAbout" class="sm_move nav-link">About me</a></li>
           <li class="g-nav-item"><a href="#targetContact" class="sm_move nav-link">Contact</a></li>
-      </ul>
+      </ul> -->
     </header>
 
     <main>
@@ -58,7 +58,7 @@
             <div class="center_block_ctn left_content">
               <img class="impotant_img" src="src/img/school.svg" alt="">
               <h3 class="bold_title">School</h3>
-              <p class="content_text">大学では授業や課外活動を通してUI/UXを軸として、ユーザヒアリングから企画提案、コーディングや制作を行っています。</p>
+              <p class="content_text">大学では授業や課外活動を通してUI/UXを軸として、ユーザヒアリングから企画提案、コーディングや制作を行っている。</p>
             </div>
 
             <div class="center_block_ctn left_content">
@@ -70,7 +70,7 @@
             <div class="center_block_ctn left_content">
               <img class="impotant_img" src="src/img/dream.svg" alt="">
               <h3>Dream</h3>
-              <p class="content_text">相手にとって本当に価値のある体験を届けられるデザイナーになりたい。</p>
+              <p class="content_text">チームがユーザーの体験について同じ方向を向ける環境を作るデザイナーになりたい。チームのメンバーに自分の考えをわかりやすく伝えるためにフロントエンドやバックエンド、営業などの知識も少しずつ身につけていきたいと考えている。</p>
             </div>
 
             <div class="center_block_ctn">
@@ -117,30 +117,26 @@
           <div class="work_2">
             <div class="flex_ctn">
               <figure class="snip1212">
-                <img src="src/img/spot_work.jpg" alt="sample74" />
+                <img src="src/img/shiden_work.jpg" alt="sample74" />
                 <figcaption>
-                  <h4>SPOT</h4>
-                  <p>函館教育大学の生徒と共同製作をしたフリーペーパー</p>
+                  <h4>函館市電サイトのリデザイン</h4>
+                  <p>3年次の授業「ヒューマンインタフェース」で製作したwebページ</p>
                 </figcaption>
-                <a href="#"></a>
+                <a href="work_shiden.html"></a>
               </figure>
-
-
-
               <figure class="snip1212">
                 <img src="src/img/portfolio_work.jpg" alt="sample74" />
                 <figcaption>
                   <h4>ポートフォリオサイト</h4>
                   <p>自分の就活に活用するため製作したwebページ</p>
                 </figcaption>
-                <a href="#"></a>
+                <a href="work_portfolio.html"></a>
               </figure>
-
-              <figure class="snip1212">
-                <img src="src/img/shiden_work.jpg" alt="sample74" />
+              <figure class="snip1212 hidden">
+                <img src="src/img/spot_work.jpg" alt="sample74" />
                 <figcaption>
-                  <h4>函館市電サイトのリデザイン</h4>
-                  <p>3年次の授業「ヒューマンインタフェース」で製作したwebページ</p>
+                  <h4>SPOT</h4>
+                  <p>函館教育大学の生徒と共同製作をしたフリーペーパー</p>
                 </figcaption>
                 <a href="#"></a>
               </figure>
@@ -165,12 +161,11 @@
 
         <div class="contact">
           <h2>Contact</h2>
+          <p>もし私に興味を持ちましたら、お気軽にメッセージをお送りください。</p>
           <div class="flex_ctn">
-            <p>もし私に興味を持ちましたら、お気軽にメッセージをお送りください。</p>
             <div class="contact_btn">
-              <a class="square_btn" href="#">Facebook</a>
-              <a class="square_btn" href="#">e-Mail</a>
-              <a class="square_btn" href="#">wantedly</a>
+              <a class="square_btn" href="https://www.facebook.com/ayumi248">Facebook</a>
+              <a class="square_btn" href="https://www.wantedly.com/users/31625898">wantedly</a>
             </div>
           </div>
         </div>

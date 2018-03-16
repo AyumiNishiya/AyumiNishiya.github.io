@@ -38,6 +38,7 @@ p {
   column-gap: 0.5;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  text-align: center;
 }
 
 .hidden {
@@ -50,8 +51,12 @@ p {
   height: 50%;
 }
 
+.no_margin {
+  margin: 0;
+}
+
 .square_btn {
-  margin-top: 0;
+  margin-top: 2%;
   margin-bottom: 2%;
   width: 150px;
   text-align: center;
@@ -193,6 +198,10 @@ body main .contents .aboutMe .aboutMe_content p {
   display: block;
   width: 100%;
 }
+body main .contents .contact p {
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
 
 .work_container {
   margin-left: 16%;
@@ -200,9 +209,10 @@ body main .contents .aboutMe .aboutMe_content p {
 }
 .work_container h1 {
   font-family: 'Damion',sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 5em;
   margin: 0;
+  text-align: center;
 }
 .work_container h2 {
   font-family: 'Noto Sans',sans-serif;
@@ -218,6 +228,10 @@ body main .contents .aboutMe .aboutMe_content p {
   font-size: 1em;
   color: #515059;
 }
+.work_container .process_contents .square_btn {
+  margin: 0;
+  margin-bottom: 5%;
+}
 .work_container .margin_bottom {
   margin-bottom: 10%;
 }
@@ -228,6 +242,7 @@ body main .contents .aboutMe .aboutMe_content p {
 .work_container p {
   margin-bottom: 20px;
   color: #515059;
+  text-align: left;
 }
 .work_container img {
   width: 100%;
@@ -277,8 +292,8 @@ figure.snip1212 {
   margin: 10px 1%;
   min-width: 275px;
   max-width: 275px;
-  max-height: 190px;
-  min-height: 190px;
+  max-height: 170px;
+  min-height: 170px;
   width: 100%;
   color: #000000;
   background-image: -webkit-linear-gradient(top, #ffffff 0%, #000000 70%);
